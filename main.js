@@ -19,7 +19,9 @@ function loadAllEventListeners() {
 
 function changeTheTheme() {
     document.body.classList.toggle("dark");
-    document.querySelector(".all").classList.toggle("dark");
+    document.querySelector(".card").classList.toggle("dark");
+    document.querySelector("#filter").classList.toggle("dark");
+    document.querySelector("#task").classList.toggle("dark");
 }
 
 function checkedTask(e) {

@@ -21,6 +21,25 @@ body.dark p {
     color: #fff;
 }
 
+.card.dark {
+    background-color: #292c35;
+    color: #fff;
+}
+
+.collection .collection-item {
+    background-color: #26a69a;
+    color: white;
+}
+
+#task.dark {
+    background-color: #292c35;
+}
+
+#filter.dark {
+    color: #fff;
+    border: #292c35;
+}
+
 ul li.checked {
     background: #888;
     color: black;
