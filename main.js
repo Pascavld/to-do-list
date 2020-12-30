@@ -3,6 +3,7 @@ const taskList = document.querySelector(".collection");
 const clearBtn = document.querySelector(".clear-tasks");
 const filter = document.querySelector("#filter");
 const taskInput = document.querySelector("#task");
+const checkbox = document.getElementById("checkbox");
 
 loadAllEventListeners();
 
@@ -12,6 +13,19 @@ function loadAllEventListeners() {
     taskList.addEventListener("click", removeTask);
     clearBtn.addEventListener("click", clearTasks);
     filter.addEventListener("keyup", filterTasks);
+    taskList.addEventListener("click", checkedTask);
+    checkbox.addEventListener("change", changeTheTheme);
+}
+
+function changeTheTheme() {
+    document.body.classList.toggle("dark");
+    document.querySelector(".all").classList.toggle("dark");
+}
+
+function checkedTask(e) {
+    if (e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+    }
 }
 
 function getTask() {
