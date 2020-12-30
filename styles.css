@@ -21,6 +21,10 @@ body.dark p {
     color: #fff;
 }
 
+#task.dark {
+    color: white;
+}
+
 .card.dark {
     background-color: #292c35;
     color: #fff;
